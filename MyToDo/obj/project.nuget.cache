@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "I6U3EONgttgAlypFBIUFQ7WKB1AsejqiFr6ESoE59auF6dS+Rb5LW9FHSm1gpDkm0ErL5E/8Kbp4G5ojpkk1kA==",
+  "success": true,
+  "projectFilePath": "A:\\Source\\Repos\\90_Work\\WPF\\MyTools\\MyToDo\\MyToDo\\MyToDo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nelsonr\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

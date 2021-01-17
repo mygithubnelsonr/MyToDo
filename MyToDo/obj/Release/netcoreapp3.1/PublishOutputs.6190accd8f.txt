@@ -1,0 +1,8 @@
+\\win2k16dc01\SDPA\03 Application\Deploy\MyToDo\MyToDo.exe
+\\win2k16dc01\SDPA\03 Application\Deploy\MyToDo\Image\ToDo.ico
+\\win2k16dc01\SDPA\03 Application\Deploy\MyToDo\todos.json
+\\win2k16dc01\SDPA\03 Application\Deploy\MyToDo\MyToDo.dll
+\\win2k16dc01\SDPA\03 Application\Deploy\MyToDo\MyToDo.deps.json
+\\win2k16dc01\SDPA\03 Application\Deploy\MyToDo\MyToDo.runtimeconfig.json
+\\win2k16dc01\SDPA\03 Application\Deploy\MyToDo\MyToDo.pdb
+\\win2k16dc01\SDPA\03 Application\Deploy\MyToDo\Newtonsoft.Json.dll

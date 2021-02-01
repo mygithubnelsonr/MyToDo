@@ -21,7 +21,7 @@ namespace MyToDo
         {
             InitializeComponent();
             listboxToDos.ItemsSource = todoList;
-            Fill();
+            Load();
         }
 
         private void Move_Window(object sender, MouseButtonEventArgs e)
@@ -108,7 +108,7 @@ namespace MyToDo
             textboxInput.Visibility = Visibility.Hidden;
         }
 
-        private void Fill()
+        private void Load()
         {
             if (!File.Exists(_fileName))
                 return;

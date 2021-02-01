@@ -22,3 +22,4 @@ A:\Source\Repos\90_Work\WPF\MyTools\MyToDo\MyToDo\bin\Debug\netcoreapp3.1\todos.
 A:\Source\Repos\90_Work\WPF\MyTools\MyToDo\MyToDo\bin\Debug\netcoreapp3.1\Image\ToDo.ico
 A:\Source\Repos\90_Work\WPF\MyTools\MyToDo\MyToDo\obj\Debug\netcoreapp3.1\MyToDo_Content.g.cs
 A:\Source\Repos\90_Work\WPF\MyTools\MyToDo\MyToDo\obj\Debug\netcoreapp3.1\App.baml
+A:\Source\Repos\90_Work\WPF\MyTools\MyToDo\MyToDo\obj\Debug\netcoreapp3.1\MyToDo.csprojAssemblyReference.cache

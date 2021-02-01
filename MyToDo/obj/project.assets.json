@@ -2,6 +2,89 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Carbon.Data.Protection/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Carbon.Data.Protection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Carbon.Data.Protection.dll": {}
+        }
+      },
+      "Carbon.Packaging/1.50.0": {
+        "type": "package",
+        "dependencies": {
+          "Carbon.Data.Protection": "1.5.0",
+          "Carbon.Storage": "3.0.1",
+          "Carbon.Versioning": "2.0.1",
+          "System.Text.Json": "5.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Carbon.Packaging.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Carbon.Packaging.dll": {}
+        }
+      },
+      "Carbon.Storage/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "5.0.1"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Carbon.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Carbon.Storage.dll": {}
+        }
+      },
+      "Carbon.VersionControl/2.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Carbon.Storage": "3.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Carbon.VersionControl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Carbon.VersionControl.dll": {}
+        }
+      },
+      "Carbon.Versioning/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.HashCode": "1.1.1",
+          "System.Text.Json": "5.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.Versioning.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Versioning.dll": {}
+        }
+      },
+      "GitHub/1.34.0": {
+        "type": "package",
+        "dependencies": {
+          "Carbon.Packaging": "1.50.0",
+          "Carbon.VersionControl": "2.6.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/GitHub.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/GitHub.dll": {}
+        }
+      },
+      "Microsoft.Bcl.HashCode/1.1.1": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/Microsoft.Bcl.HashCode.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Microsoft.Bcl.HashCode.dll": {}
+        }
+      },
       "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
@@ -10,10 +93,127 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
+      },
+      "System.Text.Json/5.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Carbon.Data.Protection/1.5.0": {
+      "sha512": "3/+PcHtuKgBotHII1Dth0SLBhNDvu2oCec0QdlRus/oHyr25BpfyhvV7h84hWP4UQQjmvymQwM0f7jLy0Vr86w==",
+      "type": "package",
+      "path": "carbon.data.protection/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "carbon.data.protection.1.5.0.nupkg.sha512",
+        "carbon.data.protection.nuspec",
+        "lib/net5.0/Carbon.Data.Protection.dll",
+        "lib/netstandard2.1/Carbon.Data.Protection.dll"
+      ]
+    },
+    "Carbon.Packaging/1.50.0": {
+      "sha512": "w8QyiBSWSqgpTWmWSYe1jJHPa20i+pd+tPT0qFWvv0gsYuPkBU6zEbH9e6Y1Xr7HdT0SFEF80neWYKy0Y6yODA==",
+      "type": "package",
+      "path": "carbon.packaging/1.50.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "carbon.packaging.1.50.0.nupkg.sha512",
+        "carbon.packaging.nuspec",
+        "lib/net5.0/Carbon.Packaging.dll",
+        "lib/netstandard2.1/Carbon.Packaging.dll"
+      ]
+    },
+    "Carbon.Storage/3.0.1": {
+      "sha512": "cymUDZ3EOryvSZEG9R8aK1Q42bbmBAoh8NX+mZdXar6AqzbUiw3rC8EmDbleRl/3l+7cpVd/TDFGxZsslfPqpA==",
+      "type": "package",
+      "path": "carbon.storage/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "carbon.storage.3.0.1.nupkg.sha512",
+        "carbon.storage.nuspec",
+        "lib/net5.0/Carbon.Storage.dll",
+        "lib/netcoreapp3.1/Carbon.Storage.dll",
+        "lib/netstandard2.0/Carbon.Storage.dll",
+        "lib/netstandard2.1/Carbon.Storage.dll"
+      ]
+    },
+    "Carbon.VersionControl/2.6.0": {
+      "sha512": "oo+oCdcRwrwjn/4I8CwzrDjH+vcTGvr9QPjJp4HFWAba3ahWiZhCWhioumbmBxnetLENGq6w64TC/xSNwecZbg==",
+      "type": "package",
+      "path": "carbon.versioncontrol/2.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "carbon.versioncontrol.2.6.0.nupkg.sha512",
+        "carbon.versioncontrol.nuspec",
+        "lib/net5.0/Carbon.VersionControl.dll",
+        "lib/netstandard2.1/Carbon.VersionControl.dll"
+      ]
+    },
+    "Carbon.Versioning/2.0.1": {
+      "sha512": "sb5wO/BgMAMvUX6gf41h7Qhl5BkbDZbGiZxm8krEq/cNbpnH+kWlo9TJmTk/5XBB+K97xzgpk2VkBedmEl1Ewg==",
+      "type": "package",
+      "path": "carbon.versioning/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "carbon.versioning.2.0.1.nupkg.sha512",
+        "carbon.versioning.nuspec",
+        "lib/net5.0/Carbon.Versioning.dll",
+        "lib/netstandard2.0/Carbon.Versioning.dll"
+      ]
+    },
+    "GitHub/1.34.0": {
+      "sha512": "X+Rn0rMMBdxlaFIL/cZAowKcnU29/oNZ9c3p61yvgJ962LmFUjlF7c2rtqbWMmOjoWxWfdoGygc2EwIPSDUQng==",
+      "type": "package",
+      "path": "github/1.34.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "github.1.34.0.nupkg.sha512",
+        "github.nuspec",
+        "lib/net5.0/GitHub.dll",
+        "lib/netstandard2.1/GitHub.dll"
+      ]
+    },
+    "Microsoft.Bcl.HashCode/1.1.1": {
+      "sha512": "MalY0Y/uM/LjXtHfX/26l2VtN4LDNZ2OE3aumNOHDLsT4fNYy2hiHXI4CXCqKpNUNm7iJ2brrc4J89UdaL56FA==",
+      "type": "package",
+      "path": "microsoft.bcl.hashcode/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.HashCode.dll",
+        "lib/net461/Microsoft.Bcl.HashCode.xml",
+        "lib/netcoreapp2.1/Microsoft.Bcl.HashCode.dll",
+        "lib/netcoreapp2.1/Microsoft.Bcl.HashCode.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.HashCode.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.HashCode.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.HashCode.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.HashCode.xml",
+        "microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
+        "microsoft.bcl.hashcode.nuspec",
+        "ref/net461/Microsoft.Bcl.HashCode.dll",
+        "ref/netcoreapp2.1/Microsoft.Bcl.HashCode.dll",
+        "ref/netstandard2.0/Microsoft.Bcl.HashCode.dll",
+        "ref/netstandard2.1/Microsoft.Bcl.HashCode.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Newtonsoft.Json/12.0.3": {
       "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
@@ -44,10 +244,33 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "System.Text.Json/5.0.1": {
+      "sha512": "/UM3UK1dXKl8Ybysg/21gM4S8DJgkR+yLU8JwqCVbuNqQNImelntgYFAN5QxR8sJJ1kMx//hOUdf0lltosi8cQ==",
+      "type": "package",
+      "path": "system.text.json/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Json.dll",
+        "lib/net461/System.Text.Json.xml",
+        "lib/netcoreapp3.0/System.Text.Json.dll",
+        "lib/netcoreapp3.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.5.0.1.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "GitHub >= 1.34.0",
       "Newtonsoft.Json >= 12.0.3"
     ]
   },
@@ -94,6 +317,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "GitHub": {
+            "target": "Package",
+            "version": "[1.34.0, )"
+          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.3, )"
